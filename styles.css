@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'copystructnormal';
+    src: url('COPYN___-webfont.eot');
+    src: url('COPYN___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('COPYN___-webfont.woff2') format('woff2'),
+         url('assets/fonts/COPYN___-webfont.woff') format('woff'),
+         url('COPYN___-webfont.ttf') format('truetype'),
+         url('COPYN___-webfont.svg#copystructnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'copystructbold';
+    src: url('COPYB___-webfont.eot');
+    src: url('COPYB___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('COPYB___-webfont.woff2') format('woff2'),
+         url('assets/fonts/COPYB___-webfont.woff') format('woff'),
+         url('COPYB___-webfont.ttf') format('truetype'),
+         url('COPYB___-webfont.svg#copystructbold') format('svg');
+    font-weight: bold;
+    font-style: bold;
+
+}
+
+:root {
+    --background: #483D3F;
+    --textColor: #F4EBD9;
+    --subjectsColor: #B8B8D1;
+    --hero: #FF6B6C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--background);
+    font-family: 'copystructnormal', sans-serif;
+    color: var(--textColor);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul {
+    display: flex;
+    gap: 5%;
+    margin-right: 3%;
+}
+
+header li {
+    list-style-type: none;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+#hero {
+    text-align: center;
+}
+
+#sub-h1 {
+    margin-bottom: 5%;
+}
+
+hr {
+    margin-bottom: 1%;
+}
+
+#outer-subjects {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#inner-subjects {
+    display: flex;
+    gap: 4%;
+    margin-left: 2%;
+    align-items: center;
+    height: 100%;
+}
+
+#icon-box {
+    display: flex;
+    gap: 20%;
+    margin-right: 3%;
+    margin-top: 1%;
+    align-items: center;
+}
+
+#card-container {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.card {
+    text-align: center;
+    width: 80%;
+    height: 50vh;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 3% auto;
+    padding: 1%;
+}
+
+/* Typography */
+
+h1 {
+    color: var(--hero);
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: .7em;
+}
+
+p, a {
+    font-size: .6em;
+}
+
+.subjects {
+    font-size: .4em;
+    color: var(--subjectsColor);
+}
+
+.date-sub {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Images */
+
+#hero-img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px groove black;
+}
+
+.icon {
+    max-width: 10px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.card-img {
+    max-width: 95%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 3%;
+}
